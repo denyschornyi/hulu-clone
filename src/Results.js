@@ -2,16 +2,15 @@ import React, {useState, useEffect} from 'react';
 import './Results.css'
 
 import axios from './axios';
-import requests from './requests';
 
 import VideoCard from './VideoCard';
 
-function Results() {
+function Results({selectedOption}) {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
-            const request = await axios.get(requests.fetchTrending);
+            const request = await axios.get(selectedOption);
             setMovies(request.data.results);
             return request;
         }
@@ -21,7 +20,7 @@ function Results() {
     return (
         <div className="results">
             {movies.map(movie => (
-                 <VideoCard movie={movie}/>
+                 <VideoCard key={movie.id} movie={movie}/>
             ))};
         </div>
     )
