@@ -5,6 +5,8 @@ import Header from './Header';
 import Nav from './Nav';
 import Results from './Results';
 
+import request from './requests';
+
 function App() {
   return (
     <div className="app">
