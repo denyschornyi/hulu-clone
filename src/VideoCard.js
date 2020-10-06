@@ -1,13 +1,24 @@
 import React from 'react'
+import TextTruncate from 'react-text-truncate';
+
 import './VideoCard.css'
 
+
+const base_url = 'https://image.tmdb.org/t/p/original'
+
 function VideoCard({movie}) {
+    console.log(movie);
     return (
         <div className="videoCard">
-            <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/W2pXHVDTyOQzYuLpj7pT_Profitable-Programmer.jpg" alt="movie"/>
-            <p>This film about coding</p>
-            <h2>Movie title</h2>
-            <p>Numbers of likes...</p>
+            <img src={base_url + movie.backdrop_path || movie.poster_path} alt="movie"/>
+            <TextTruncate
+                line={1}
+                element="p"
+                truncateText="…"
+                text={movie.overview}
+            />
+            <h2>{movie.title || movie.original_name}</h2>
+            <p>{movie.first_air_date || movie.release_date}</p>
         </div>
     )
 }

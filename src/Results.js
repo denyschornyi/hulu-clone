@@ -12,7 +12,8 @@ function Results() {
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(requests.fetchTrending);
-            console.log(request);
+            setMovies(request.data.results);
+            return request;
         }
         fetchData();
     }, [])
@@ -20,7 +21,7 @@ function Results() {
     return (
         <div className="results">
             {movies.map(movie => (
-                 <VideoCard />
+                 <VideoCard movie={movie}/>
             ))};
         </div>
     )
