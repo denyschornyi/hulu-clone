@@ -8,6 +8,23 @@
     overflow-x: scroll; 
 }
 
+
+/* make scrollbar transparent */
+.header::-webkit-scrollbar {
+    display: none;
+}
+.header{
+    /* IE 10+ */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}
+  
+.header::-webkit-scrollbar {
+    /* Safari and Chrome */
+    display: none;
+}
+
 .header__icons{
     display: flex;
     align-items: center;
