@@ -5,3 +5,19 @@
     padding: 10px; 
     padding-left: 40px; 
 }
+
+/* make scrollbar transparent */
+.nav::-webkit-scrollbar {
+    display: none;
+}
+.nav{
+    /* IE 10+ */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}
+  
+.nav::-webkit-scrollbar {
+    /* Safari and Chrome */
+    display: none;
+}
