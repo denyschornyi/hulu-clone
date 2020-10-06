@@ -21,3 +21,18 @@
     /* Safari and Chrome */
     display: none;
 }
+
+.nav > h2{
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+    opacity: .7;
+    transition: transform 50ms ease-out;
+    font-size: 20px;
+}
+
+.nav > h2:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
