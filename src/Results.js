@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import FlipMove from 'react-flip-move';
 import './Results.css'
 
 import axios from './axios';
@@ -19,9 +20,11 @@ function Results({selectedOption}) {
 
     return (
         <div className="results">
-            {movies.map(movie => (
-                 <VideoCard key={movie.id} movie={movie}/>
-            ))};
+            <FlipMove>
+                {movies.map(movie => (
+                    <VideoCard key={movie.id} movie={movie}/>
+                ))}
+            </FlipMove>
         </div>
     )
 }
