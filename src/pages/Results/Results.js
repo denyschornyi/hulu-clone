@@ -5,8 +5,8 @@ import './Results.css'
 import axios from '../../axios';
 import requests from '../../requests';
 
-import VideoCard from '../../VideoCard';
-import Nav from '../../Nav'
+import VideoCard from '../../components/VideoCard';
+import Nav from '../../components/Nav'
 
 function Results() {
     const [selectedOption, setSelectedOption] = useState(requests.fetchTrending);
