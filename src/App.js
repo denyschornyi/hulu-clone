@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
+import {BrowserRouter as Router, Route } from "react-router-dom";
+
 import './App.css';
 
 import Header from './Header';
 import Nav from './Nav';
 import Results from './Results';
+import Trending from './Trending'
 
 import requests from './requests';
 
@@ -12,14 +15,16 @@ function App() {
   const [selectedOption, setSelectedOption] = useState(requests.fetchTrending);
 
   return (
-    <div className="app">
+    <Router>
+      <div className="app">
       <Header/>
 
       <Nav setSelectedOption={setSelectedOption}/>
 
-      <Results selectedOption={selectedOption}/>
-
-    </div>
+      <Route exact path='/' render={() => <Results selectedOption={selectedOption}/>}/>
+      <Route exact path='/trending' render={() => <Trending/>}/>
+      </div>
+    </Router>
   );
 }
 

@@ -35,6 +35,8 @@
     flex-direction: column;
     cursor: pointer;
     width: 100px;
+    color: white;
+    text-decoration: none;
 }
 
 .header__icon > .MuiSvgIcon-root{
