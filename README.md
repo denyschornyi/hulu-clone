@@ -3,7 +3,7 @@
 
 ![screenshot](./hulu-clone.png)
 
-# I developed an Hulu Responsive web app clone using React 
+## I developed an Hulu Responsive web app clone using React 
 
 
 ## [Live Demo](https://hulu-react-api-clone.web.app/)
