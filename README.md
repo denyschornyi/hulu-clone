@@ -1,4 +1,4 @@
-<h2> Hulu-Clone Project <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe4%2FHulu_Logo.svg%2F1200px-Hulu_Logo.svg.png&f=1&nofb=1" height="20px">
+<h2> Hulu Clone Project <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe4%2FHulu_Logo.svg%2F1200px-Hulu_Logo.svg.png&f=1&nofb=1" height="20px">
 </h2>
 
 ![screenshot](./hulu-clone.png)
