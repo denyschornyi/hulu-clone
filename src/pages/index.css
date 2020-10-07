@@ -1,8 +1,7 @@
 .trending,
 .verified,
 .account,
-.collections,
-.search{
+.collections{
   display: flex;
   align-items: center;
   justify-content: center;
