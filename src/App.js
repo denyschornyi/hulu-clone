@@ -5,8 +5,10 @@ import './App.css';
 
 import Header from './Header';
 import Nav from './Nav';
+import Footer from './Footer';
 import Results from './Results';
 import Trending from './Trending'
+
 
 import requests from './requests';
 
@@ -23,6 +25,8 @@ function App() {
 
       <Route exact path='/' render={() => <Results selectedOption={selectedOption}/>}/>
       <Route exact path='/trending' render={() => <Trending/>}/>
+
+      <Footer/>
       </div>
     </Router>
   );
