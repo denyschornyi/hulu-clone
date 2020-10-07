@@ -23,27 +23,27 @@ function Header() {
                         <p>Home</p>
                     </NavLink>
                 
-                    <NavLink to='/trending' className="header__icon">
+                    <NavLink to='/trending' className="header__icon" activeClassName="header__icon--active">
                         <FlashOnIcon/>
                         <p>Trending</p>
                     </NavLink>
                 
-                    <NavLink to="/verified" className="header__icon"  >
+                    <NavLink to="/verified" className="header__icon" activeClassName="header__icon--active">
                         <LiveTvIcon/>
                         <p>Verified</p>
                     </NavLink>
 
-                    <NavLink to='/collections' className="header__icon">
+                    <NavLink to='/collections' className="header__icon" activeClassName="header__icon--active">
                         <VideoLibraryIcon/>
                         <p>Collections</p>
                     </NavLink>
 
-                    <NavLink to='/search' className="header__icon">
+                    <NavLink to='/search' className="header__icon" activeClassName="header__icon--active">
                         <SearchIcon/>
                         <p>Search</p>
                     </NavLink>
                 
-                    <NavLink to='/account' className="header__icon">
+                    <NavLink to='/account' className="header__icon" activeClassName="header__icon--active">
                         <PersonOutlineIcon/>
                         <p>Account</p>
                     </NavLink>

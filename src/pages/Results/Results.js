@@ -2,9 +2,9 @@ import React, {useState, useEffect} from 'react';
 import FlipMove from 'react-flip-move';
 import './Results.css'
 
-import axios from './axios';
+import axios from '../../axios';
 
-import VideoCard from './VideoCard';
+import VideoCard from '../../VideoCard';
 
 function Results({selectedOption}) {
     const [movies, setMovies] = useState([]);

@@ -6,9 +6,13 @@ import './App.css';
 import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
-import Results from './Results';
-import Trending from './Trending'
+import Results from './pages/Results';
 
+import Trending from './pages/Trending';
+import Verified from './pages/Verified';
+import Collections from './pages/Collections';
+import Search from './pages/Search';
+import Account from './pages/Account';
 
 import requests from './requests';
 
@@ -25,6 +29,10 @@ function App() {
 
       <Route exact path='/' render={() => <Results selectedOption={selectedOption}/>}/>
       <Route exact path='/trending' render={() => <Trending/>}/>
+      <Route exact path='/verified' render={() => <Verified/>}/>
+      <Route exact path='/collections' render={() => <Collections/>}/>
+      <Route exact path='/search' render={() => <Search/>}/>
+      <Route exact path='/account' render={() => <Account/>}/>
 
       <Footer/>
       </div>
